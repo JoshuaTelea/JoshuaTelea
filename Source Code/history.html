@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head><link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<title>Philatelic Foundation</title>
+</head>
+<body>
+<header>
+<img src="Postimg.png">
+<div>
+<h1>Philatelic Foundation INC.</h1>
+<p>Christchurch</p>
+</div>
+
+<button onclick="nav()"id="menu">
+<script>
+	function nav(){
+		var x = document.getElementById("navid");
+		var y = document.getElementById('menu');
+		  if (x.style.display === "none") {
+			x.style.display = "inline-block";
+			y.background = "http://jot0501website.zapto.org/placeholder.png";
+		  } else {
+			x.style.display = "none";
+		  }
+	}
+</script>
+</button>
+
+</header>
+<div>
+<nav id="navid">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		
+		<li><a href="collection.php">Our Collection</a></li>
+		<li><a href="aboutus.html">Contact Details</a></li>
+		<li><a href="news.html">News</a></li>
+		<li><a href="meetings.html">Meetings</a></li>
+		</ul>
+</nav>
+<form action="collection.php?search=<?php echo $_POST['search']?>">
+	<input type="text" name="search" placeholder="put what your looking for here!">
+	<input type="submit" value="Search">
+</form>
+</div>
+<main>
+
+</div>
+	<div id="contentcontainerh">
+		<div id="contenth">
+			<h2> The Foundations History</h2>
+			<p>The Philatelic Foundation Christchurch Inc was formed from the committee of Panpex'77 National Stamp Exhibition organisation in 1977 following the successful holding of that exhibition.<br><br>
+The people on that committee did not want to see the expertise they had developed go to waste as far as philately was concerned and so the Panpex'77 organisation was renamed and The Philatelic Foundation Christchurch Inc was born.<br><br>
+
+Its first task was to acquire ownership of a home for philately in Christchurch. This was achieved with the purchase of the property at 27 Worcester Boulevard in central Christchurch which became the home for organised Philately in Christchurch for the next 20 years until sold in 1997 to aid in the purchase of the current building at 67 Mandeville St.<br><br>
+
+Currently the Philatelic Foundation Christchurch (Inc) occupies the top storey of 67 Mandeville St from where it organises its regular monthly public stamp auctions and occasional postal auctions.</p>
+			
+			
+			
+		
+		</div>
+		<img id="historyimg"
+	</div>
+	
+	
+	
+</main>
+<footer>
+<p>Copyright </p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+<p>Contact Us</p>
+<p>About Us</p>
+</footer>
+</html>
+</body>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head><link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<title>Philatelic Foundation</title>
+</head>
+<body>
+<header>
+<img src="Postimg.png">
+<div>
+<h1>Philatelic Foundation INC.</h1>
+<p>Christchurch</p>
+</div>
+
+<button onclick="nav()"id="menu">
+<script>
+	function nav(){
+		var x = document.getElementById("navid");
+		var y = document.getElementById('menu');
+		  if (x.style.display === "none") {
+			x.style.display = "inline-block";
+			y.background = "http://jot0501website.zapto.org/placeholder.png";
+		  } else {
+			x.style.display = "none";
+		  }
+	}
+</script>
+</button>
+
+</header>
+<div>
+<nav id="navid">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="history.html">Foundations History</a></li>
+		<li><a href="collection.php">Our Collection</a></li>
+		
+		<li><a href="news.html">News</a></li>
+		<li><a href="meetings.html">Meetings</a></li>
+		</ul>
+</nav>
+<form action="collection.php?search=<?php echo $_POST['search']?>">
+	<input type="text" name="search" placeholder="put what your looking for here!">
+	<input type="submit" value="Search">
+</form>
+</div>
+<main>
+
+</div>
+	<div id="contentcontainer">
+		<div id="content">
+			<h2> Contact Details</h2>
+			<p>Welcome, you're probably wondering how to contact us? Feel free to contact any variety of the emails, numbers and links listed below. We will get back to you as soon as we can.</p> 
+			<br><br><br><br><br><br>
+			<p>Don't forget! If you are contacting us about something on the site you are intrested please dont forget to include the reference number in your message.</p>
+			
+			
+		
+		</div>
+	</div>
+	<div id="contactcontainer">
+		<div id="contactitemleft">
+		<img src="placeholder.png"/> 
+		<h3>Name: Xxxxxx Xxxxx<br>email: XXXXXX@gmail.com<br>02234563456<br>Position: Xxxxxxxxx</h3>
+		
+		
+		
+		</div>
+		<div id="contactitemright">
+		<img src="placeholder.png"/> 
+		
+		<h3>Name: Xxxxxx Xxxxx<br>email: YYYYYY@gmail.com<br>phone:02234563456<br>Position: Xxxxxxxxx</h3>
+		
+		
+		</div>
+		
+	</div>
+	
+	
+</main>
+<footer>
+<p>Copyright </p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+<p>Contact Us</p>
+<p>About Us</p>
+</footer>
+</html>
+</body>

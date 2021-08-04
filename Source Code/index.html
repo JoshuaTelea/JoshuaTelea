@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head><link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<title>Philatelic Foundation</title>
+</head>
+<body>
+<header>
+<img src="http://jot0501website.zapto.org/Postimg.png">
+<div>
+<h1>Philatelic Foundation INC.</h1>
+<p>Christchurch</p>
+</div>
+
+<button onclick="nav()"id="menu">
+<script>
+	function nav(){
+		var x = document.getElementById("navid");
+		var y = document.getElementById('menu');
+		  if (x.style.display === "none") {
+			x.style.display = "inline-block";
+			y.background = "http://jot0501website.zapto.org/placeholder.png";
+		  } else {
+			x.style.display = "none";
+		  }
+	}
+</script>
+</button>
+
+</header>
+<div>
+<nav id="navid">
+	<ul>
+		<li><a href="history.html">Foundations History</a></li>
+		<li><a href="collection.php">Our Collection</a></li>
+		<li><a href="aboutus.html">Contact Details</a></li>
+		<li><a href="news.html">News</a></li>
+		<li><a href="meetings.html">Meetings</a></li>
+		</ul>
+</nav>
+<form action="collection.php?search=<?php echo $_POST['search']?>">
+	<input type="text" name="search" placeholder="put what your looking for here!">
+	<input type="submit" value="Search">
+</form>
+</div>
+<main>
+
+</div>
+	<div id="contentcontainerhome">
+	
+		<div id="contenthome">
+			<h2> Welcome!</h2>
+			<p> Our organization have decided to share our knowledge and love for philitaly! As we hate having our expertise and the history of post go to waste, you can now find out all about us here and all of the items we have collected over the many years.</p> 
+			
+			
+		</div>
+		
+		<button class="coolbutton" onclick="document.location='collection.php'"><b>Explore!</b></button>
+		
+	
+			
+			
+			
+	</div>
+	<aside>
+	<div>
+	<h2> Where are we?
+	<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!4v1621158776419!6m8!1m7!1s0OEJXWSybNA9U3Bj6dm5kw!2m2!1d-43.53257413603271!2d172.6065202674165!3f264.92733210543594!4f-2.1751274584644307!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+	<div class="iframe">
+	<h2>Mini Slideshow</h2>
+	<div class="w3-content w3-section" style="max-width:700px">
+	
+	  <img class="mySlides" src="http://jot0501website.zapto.org/IMG/sign1.jpg" style="width:100%">
+	  <img class="mySlides" src="http://jot0501website.zapto.org/IMG/5medals.jpg" style="width:100%">
+	  <img class="mySlides" src="http://jot0501website.zapto.org/IMG/footbal.jpg" style="width:100%">
+	</div>
+	</div>
+	</aside>
+	
+	
+	<script>
+	
+	var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+		
+	
+	
+	
+	
+</main>
+<footer>
+<p>Copyright </p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+<p>Contact Us</p>
+<p>About Us</p>
+<style>
+p a{
+	color:white;
+}
+</style>
+<p><a href="Admin.php">Admin Page</a></p>
+</footer>
+</html>
+</body>

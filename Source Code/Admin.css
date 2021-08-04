@@ -1,0 +1,32 @@
+html{
+	font-family: 'Work Sans', sans-serif;
+}
+body{
+	display:flex;
+	justify-content:center;
+	background-color:#A01821;
+	color:black;
+	
+}
+.form{
+	background-color:#EBEBEB;
+	padding:2em;
+	border-radius:2em;
+	margin-top:50%;
+	
+}
+h1{
+	font-size:3em;
+	text-align:center;
+}
+p{
+	font-size:2em;
+}
+input{
+	width:100%;
+	height:2.5em;
+	font-size:30px;
+}
+.error{
+	color:red;
+}
